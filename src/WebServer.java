@@ -65,11 +65,11 @@ class TinyHttpConnection implements Runnable{
 			deviceInfo.put("Curtain", "Draw");
 			deviceInfo.put("Doorlock", "Locked");
 			deviceInfo.put("Led", ledList);
-			deviceList.add(deviceInfo);
-			jsonobject.put("Device", deviceList);
+			//deviceList.add(deviceInfo);
+			jsonobject.put("Device", deviceInfo);
 		} catch (Exception e) {
 		}
-		return jsonobject ;
+		return deviceInfo ;
 	}
 	
 	TinyHttpConnection(Socket client) throws SocketException{
