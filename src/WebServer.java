@@ -61,9 +61,10 @@ class TinyHttpConnection implements Runnable{
 			ledInfo.put("room2", "Off");
 			ledInfo.put("room3", "On");
 			ledInfo.put("room4", "Off");
+			ledInfo.put("livingroom", "On");
 			ledList.add(ledInfo);
-			deviceInfo.put("Curtain", "Draw");
-			deviceInfo.put("Doorlock", "Locked");
+			deviceInfo.put("Curtain", "Closed");
+			deviceInfo.put("Doorlock", "Unlocked");
 			deviceInfo.put("Led", ledList);
 			//deviceList.add(deviceInfo);
 			jsonobject.put("Device", deviceInfo);
